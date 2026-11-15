@@ -1,0 +1,2508 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+  rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0c20">
+  <meta name="description" content="ElaVisual: portafolio creativo de diseño multimedia, programación y experiencias digitales.">
+  <title>ElaVisual | Portafolio Multimedia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="Logo ElaVisual Vectorizado.png">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.classList.add("has-js");
+    try {
+      if (
+        matchMedia("(prefers-reduced-motion: reduce)").matches ||
+        localStorage.getItem("elavisual-reducir-movimiento") === "si"
+      ) document.documentElement.classList.add("reduce-motion");
+      if (localStorage.getItem("elavisual-theme") === "light")
+        document.documentElement.classList.add("light");
+    } catch (_) {}
+  </script>
+  <script src="java.js" defer></script>
+</head>
+
+<body>
+  <!-- ANIMACIÓN DE ENTRADA -->
+  <div id="intro-screen" class="intro-screen" role="dialog"
+       aria-modal="true" aria-labelledby="intro-title">
+    <div class="intro-content">
+      <div class="intro-glow"></div>
+      <img src="Logo ElaVisual Vectorizado.png"
+           alt="Logo ElaVisual" class="intro-logo">
+      <h2 id="intro-title">ELA<span>VISUAL</span></h2>
+      <p>Portfolio Interactivo</p>
+      <div class="intro-progress"><i></i></div>
+    </div>
+    <button id="intro-skip" class="intro-skip" type="button">
+      Saltar introducción ↗
+    </button>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="nav-shell" id="site-header">
+    <div class="container nav">
+      <a class="logo" href="#inicio">
+        <img src="Logo ElaVisual Vectorizado.png" alt="" width="44" height="44">
+        <span>ELA<em>VISUAL</em></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Menú principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#perfil">Perfil / CV</a>
+<a href="#servicios">Servicios</a>
+
+<a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-button"
+                type="button" title="Cambiar tema"
+                aria-label="Cambiar tema">☾</button>
+        <button class="icon-btn" id="motion-button"
+                type="button" title="Reducir animaciones"
+                aria-label="Reducir animaciones" aria-pressed="false">◌</button>
+        <button class="icon-btn menu-btn" id="menu-button"
+                type="button" aria-label="Abrir menú"
+                aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PÁGINA PRINCIPAL -->
+  <main id="home-view">
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="live-dot"></span>
+            PORTAFOLIO CREATIVO / EDICIÓN 2026
+          </div>
+         
+<h1 class="hero-title">
+  <span class="hero-word hero-word-1">
+    IMAGINA.
+  </span>
+
+  <span class="hero-word hero-word-2 outlined">
+    CREA.
+  </span>
+
+  <span class="hero-word hero-word-3 accent">
+    IMPACTA.
+  </span>
+</h1>
+
+          <p class="hero-desc">
+            ¡Hola! Soy <strong>Gabriela Corporan</strong>,
+            estudiante de Multimedia. Exploro el punto donde
+            el <strong>diseño, el movimiento y las ideas</strong>
+            se encuentran para crear cosas diferentes.
+          </p>
+          <div class="hero-btns">
+            <a class="primary-btn" href="#proyectos">Ver mis proyectos ↗</a>
+            <a class="secondary-btn" href="#sobre-mi">Conóceme ✳</a>
+          </div>
+          <div class="meta-row">
+            <span>✦ Diseño gráfico</span>
+            <span>✦ Motion & video</span>
+            <span>✦ Creatividad digital</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Ilustración creativa ElaVisual">
+          <div class="orbit"></div>
+          <div class="orbit two"></div>
+          <div class="big-card">
+            <div class="card-top"><i></i><i></i><i></i></div>
+            <div class="card-copy">
+              <small>CREATIVE SPACE / 01</small>
+              CREAR.<br>EXPLORAR.<br>
+              <b>IMAGINAR.</b>
+            </div>
+<div class="central-symbol">
+  <img src="Logo ElaVisual Vectorizado.png" alt="Logo ElaVisual">
+</div>          </div>
+          <div class="floating sticker1">✦ 100% creativo</div>
+          <div class="floating sticker2">MULTIMEDIA ↗</div>
+          <div class="floating sticker3">✺</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CINTA -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-line">
+        <span>✳ DISEÑO GRÁFICO</span>
+        <span>✦ EDICIÓN DE VIDEO</span>
+        <span>✳ DISEÑO EDITORIAL</span>
+        <span>✦ UI / UX</span>
+        <span>✳ PROGRAMACIÓN</span>
+        <span>✦ DISEÑO GRÁFICO</span>
+        <span>✳ EDICIÓN DE VIDEO</span>
+      </div>
+    </div>
+
+    <!-- MIS PROYECTOS -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <span class="section-eyebrow">01 / PORTAFOLIO</span>
+            <h2>Mis proyectos <em>✳</em></h2>
+          </div>
+          <p class="section-lead">
+            Una selección de conceptos gráficos, experimentos visuales
+            y piezas digitales. Cada proyecto cuenta una historia distinta.
+          </p>
+        </div>
+
+       
+<!-- ORDERLY / PROYECTO DESTACADO -->
+
+<article class="orderly-feature reveal">
+
+  <div class="orderly-feature-copy">
+
+    <span class="orderly-kicker">
+      ✳ PROYECTO PERSONAL DESTACADO · UX/UI
+    </span>
+
+    <h3>
+      Tu comida.<br>
+      <em>A tu manera.</em>
+    </h3>
+
+    <p>
+      ORDERLY es una aplicación conceptual de
+      pedidos a domicilio diseñada en Figma.
+      Permite descubrir restaurantes, personalizar
+      productos y seguir el proceso de entrega.
+    </p>
+
+    <div class="orderly-tags">
+      <span>Figma</span>
+      <span>Diseño UX/UI</span>
+      <span>2026</span>
+    </div>
+
+    <a href="#proyecto/orderly"
+       class="orderly-feature-button">
+      Explorar caso de estudio ↗
+    </a>
+
+  </div>
+
+  <div class="orderly-feature-art"
+       aria-hidden="true">
+
+    <div class="orderly-feature-circle"></div>
+
+    <div class="orderly-mini-phone">
+      <div class="orderly-mini-camera"></div>
+
+      <div class="orderly-mini-content">
+        <strong>ORDERLY<span>.</span></strong>
+        <small>¿Qué se te antoja hoy?</small>
+
+        <div class="orderly-mini-banner">
+          <span>¡Disfruta<br>cada bocado!</span>
+          <b>🍔</b>
+        </div>
+
+        <div class="orderly-mini-categories">
+          <span>🍕 Pizza</span>
+          <span>🍔 Burger</span>
+        </div>
+
+        <div class="orderly-mini-item">
+          <span>🍔</span>
+          <div>
+            <b>Double Burger</b>
+            <small>Personaliza tu pedido</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <span class="orderly-floating orderly-floating-one">
+      ✦ YOUR FOOD, YOUR WAY
+    </span>
+
+    <span class="orderly-floating orderly-floating-two">
+      🛵 Delivery
+    </span>
+
+  </div>
+
+</article>
+
+<!-- DELIO SMARTPHONE / BRANDING DESTACADO -->
+
+<article class="delio-feature reveal">
+  <div class="delio-feature-copy">
+
+    <span class="delio-eyebrow">
+      ✦ TRABAJO PARA CLIENTE · BRANDING
+    </span>
+
+    <h3>
+      Identidad que<br>
+      <em>deja huella.</em>
+    </h3>
+
+    <p>
+      Desarrollo del sistema de identidad visual
+      de Delio Smartphone. Un proyecto centrado
+      en el logotipo, la coherencia gráfica y
+      las aplicaciones de marca.
+    </p>
+
+    <div class="delio-tags">
+      <span>Branding</span>
+      <span>Illustrator</span>
+      <span>Identidad visual</span>
+      <span>2026</span>
+    </div>
+
+    <a href="#proyecto/delio-smartphone"
+       class="delio-feature-button">
+      Explorar caso de estudio ↗
+    </a>
+  </div>
+
+  <div class="delio-feature-art" aria-hidden="true">
+    <div class="delio-feature-orbit"></div>
+
+    <div class="delio-brand-board">
+      <small>BRAND IDENTITY SYSTEM · 2026</small>
+
+      
+<div class="delio-preview-logo">
+  <img
+    src="DELIO_LOGOTIPO-01.png"
+    alt="Logotipo original de Delio Smartphone"
+    class="delio-preview-logo-img"
+    loading="lazy"
+  >
+</div>
+
+
+      <div class="delio-brand-rule"></div>
+      <span class="delio-board-footer">
+        IDENTIDAD · SISTEMA · APLICACIÓN
+      </span>
+    </div>
+
+    <span class="delio-floating">
+      ✦ DESIGN SYSTEM
+    </span>
+  </div>
+</article>
+
+<div class="portfolio-type-tabs reveal">
+
+  <a class="portfolio-type"
+     href="#portafolio/universitario"
+     data-portfolio-link="universitario">
+
+    <span class="portfolio-type-icon">✳</span>
+    <span class="portfolio-type-info">
+      <strong>Proyectos universitarios</strong>
+      <small>Aprendizaje y desarrollo académico</small>
+    </span>
+    <span class="portfolio-type-arrow">↗</span>
+  </a>
+
+  <a class="portfolio-type"
+     href="#portafolio/personal"
+     data-portfolio-link="personal">
+
+    <span class="portfolio-type-icon">✦</span>
+    <span class="portfolio-type-info">
+      <strong>Proyectos personales</strong>
+      <small>Experimentación y creatividad libre</small>
+    </span>
+    <span class="portfolio-type-arrow">↗</span>
+  </a>
+
+  <a class="portfolio-type"
+     href="#portafolio/trabajo"
+     data-portfolio-link="trabajo">
+
+    <span class="portfolio-type-icon">⌘</span>
+    <span class="portfolio-type-info">
+      <strong>Trabajos</strong>
+      <small>Proyectos para clientes y colaboraciones</small>
+    </span>
+    <span class="portfolio-type-arrow">↗</span>
+  </a>
+
+</div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section about" id="sobre-mi">
+      <div class="container about-grid">
+        <div class="about-art reveal" aria-hidden="true">
+          <div class="about-main-shape">✦</div>
+          <div class="about-circle">IDEAS ✺</div>
+          <div class="about-white">
+            Un poco de arte.<br>
+            Un poco de caos.<br>
+            Muchas ideas. ✳
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="section-eyebrow">02 / MI HISTORIA</span>
+          <h2>La creatividad detrás de la <em>pantalla.</em></h2>
+          <p>
+            Soy Gabriela Corporan, estudiante de Multimedia en el
+            Instituto Tecnológico de las Américas (ITLA).
+            Me interesa el diseño gráfico, la edición audiovisual,
+            el desarrollo web y las experiencias digitales.
+          </p>
+          <p>
+            Disfruto experimentar con tipografía, color,
+            composición y movimiento para transformar ideas
+            en proyectos visuales con identidad propia.
+          </p>
+
+          <div class="facts">
+            <div><strong>Multimedia</strong><small>Formación académica</small></div>
+            <div><strong>ITLA</strong><small>Institución educativa</small></div>
+            <div><strong>Diseño + tecnología</strong><small>Áreas de interés</small></div>
+            <div><strong>República Dominicana</strong><small>Ubicación</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFIL PROFESIONAL -->
+    <section class="section professional" id="perfil">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <span class="section-eyebrow">02.B / PERFIL PROFESIONAL</span>
+            <h2>Creatividad con <em>propósito.</em></h2>
+          </div>
+          <p class="section-lead">
+            Formación multimedia, conocimientos tecnológicos
+            y aprendizaje continuo.
+          </p>
+        </div>
+
+        <div class="professional-grid">
+          <div class="professional-main">
+            <span class="mini-label">MI PRESENTACIÓN</span>
+            <h3>Diseño, tecnología y comunicación visual</h3>
+            <p>
+              Estudiante de Multimedia en el ITLA con interés en
+              diseño gráfico, edición de video, diseño editorial,
+              interfaces digitales y desarrollo web.
+            </p>
+            <div class="professional-actions">
+              <a href="CV_Gabriela_Corporan.pdf"
+                 download="CV_Gabriela_Corporan.pdf"
+                 class="primary-btn">Descargar mi CV ↓</a>
+              <a href="cv.html" target="_blank" rel="noopener"
+                 class="secondary-btn">Ver CV en línea ↗</a>
+            </div>
+            <small class="note">
+              El CV debe estar guardado en la misma carpeta del sitio.
+            </small>
+          </div>
+
+          <div class="professional-side">
+            <div class="info-card">
+              <span>✦ FORMACIÓN</span>
+              <h3>Multimedia</h3>
+              <p>Instituto Tecnológico de las Américas (ITLA)</p>
+            </div>
+            <div class="info-card">
+              <span>⌘ ESPECIALIDADES</span>
+              <h3>Diseño + digital</h3>
+              <p>Gráfico · Editorial · Video · UI/UX · Web</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERTIFICACIONES -->
+        <section class="certifications" id="certificaciones">
+          <div class="section-top">
+            <div>
+              <span class="section-eyebrow">FORMACIÓN COMPLEMENTARIA</span>
+              <h3>Certificaciones <em>✦</em></h3>
+            </div>
+            <div class="cert-count"><strong>13</strong><span>certificaciones</span></div>
+          </div>
+
+          <div class="certificate-filters" id="certificate-filters"
+               role="group" aria-label="Filtrar certificaciones">
+            <button type="button" class="selected" data-cert-filter="all">Todas · 13</button>
+            <button type="button" data-cert-filter="programacion">Programación</button>
+            <button type="button" data-cert-filter="web">Desarrollo web</button>
+            <button type="button" data-cert-filter="idiomas">Inglés</button>
+            <button type="button" data-cert-filter="redes">Redes y seguridad</button>
+            <button type="button" data-cert-filter="digital">Marketing y digital</button>
+          </div>
+
+          <div id="certificate-grid" class="certificate-grid">
+
+            <article class="certificate-card" data-cert-category="digital"
+              data-badge-url="https://certiplus.io/certification/validation?id=d2df0beb-36e0-42a9-bf42-a037c9a3ce30">
+              <div class="certificate-card__top">
+                <span>Marketing y digital</span><time>Noviembre 2026</time>
+              </div>
+              <h4>Digital Marketing Certification Associate</h4>
+              <p>Certiplus</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="idiomas" data-badge-url="https://badges.parchment.com/public/assertions/Gd75IuM9S3m5nE1fZhQOjw">
+              <div class="certificate-card__top">
+                <span>Inglés</span><time>feb. 2026</time>
+              </div>
+              <h4>English for Career Development MOOC</h4>
+              <p>Canvas Credentials (Badgr)</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="digital" data-badge-url="https://www.linkedin.com/in/gabrielacorporan/overlay/Certifications/1242473657/treasury/?profileId=ACoAAE9Qs84BPHlxv0V7ghR4gOYWmi2crSWSBhQ">
+              <div class="certificate-card__top">
+                <span>Marketing y digital</span><time>ene. 2026</time>
+              </div>
+              <h4>Marketing Digital - Nivel Intermedio</h4>
+              <p>INDOTEL</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="programacion" data-badge-url="https://capacitateparaelempleo.org/verifica/bb539a98-3708-403d-a114-af24a6a3a3b8/2964de0f-4b6e-46c4-9f01-504789e34126">
+              <div class="certificate-card__top">
+                <span>Programación</span><time>feb. 2025</time>
+              </div>
+              <h4>Introducción a la programación</h4>
+              <p>Fundación Carlos Slim</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="programacion" data-badge-url="https://www.linkedin.com/in/gabrielacorporan/overlay/Certifications/1243947109/treasury/?profileId=ACoAAE9Qs84BPHlxv0V7ghR4gOYWmi2crSWSBhQ">
+              <div class="certificate-card__top">
+                <span>Programación</span><time>oct. 2024</time>
+              </div>
+              <h4>C#.Net Intermedio</h4>
+              <p>ITLA</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="redes" data-badge-url="https://servicios.infotep.gob.do/certificados/ValidacionCertificado.aspx?id=AAAfxZAAEAAFpB%2fAAL&val=1">
+              <div class="certificate-card__top">
+                <span>Redes y seguridad</span><time>jul. 2024</time>
+              </div>
+              <h4>Introducción a las Redes (CCNA 1)</h4>
+              <p>INFOTEP</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="redes" data-badge-url="https://www.credly.com/badges/b50cf23a-122f-4b7d-9e53-bcb021c0e85a/linked_in_profile">
+              <div class="certificate-card__top">
+                <span>Redes y seguridad</span><time>jul. 2024</time>
+              </div>
+              <h4>Introduction to Cybersecurity</h4>
+              <p>Cisco</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="programacion" data-badge-url="https://www.freecodecamp.org/certification/elagabri/foundational-c-sharp-with-microsoft">
+              <div class="certificate-card__top">
+                <span>Programación</span><time>jun. 2024</time>
+              </div>
+              <h4>Foundational C# with Microsoft</h4>
+              <p>freeCodeCamp</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="digital" data-badge-url="https://skillshop.exceedlms.com/student/award/W9ZV3iUDsusHz6197X5nYTaX">
+              <div class="certificate-card__top">
+                <span>Marketing y digital</span><time>jun. 2024</time>
+              </div>
+              <h4>Competencias digitales para profesionales</h4>
+              <p>Google Digital Academy (Skillshop)</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="web" data-badge-url="https://skillshop.exceedlms.com/student/award/Y2fHHErbNMPm5YZLUAki9h5d">
+              <div class="certificate-card__top">
+                <span>Desarrollo web</span><time>jun. 2024</time>
+              </div>
+              <h4>Curso de introducción al desarrollo web: HTML y CSS (1/2)</h4>
+              <p>Google Digital Academy (Skillshop)</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="idiomas" data-badge-url="https://www.linkedin.com/in/gabrielacorporan/overlay/Certifications/1243789261/treasury/?profileId=ACoAAE9Qs84BPHlxv0V7ghR4gOYWmi2crSWSBhQ">
+              <div class="certificate-card__top">
+                <span>Inglés</span><time>abr. 2024</time>
+              </div>
+              <h4>Inglés Intensivo 12 Niveles</h4>
+              <p>ITLA</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="web" data-badge-url="https://servicios.infotep.gob.do/certificados/ValidacionCertificado.aspx?id=AAAfxZAANAAEffkAAR&val=1">
+              <div class="certificate-card__top">
+                <span>Desarrollo web</span><time>abr. 2024</time>
+              </div>
+              <h4>Diseño de Páginas Web, CSS y JavaScript</h4>
+              <p>INFOTEP</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+            <article class="certificate-card" data-cert-category="programacion" data-badge-url="https://servicios.infotep.gob.do/certificados/ValidacionCertificado.aspx?id=AAAfxZAAMAAAuAcAAK&val=1">
+              <div class="certificate-card__top">
+                <span>Programación</span><time>dic. 2023</time>
+              </div>
+              <h4>Programación Básica de Computadoras</h4>
+              <p>INFOTEP</p>
+              <div class="certificate-card__bottom">✳ Licencia o certificación</div>
+            </article>
+
+          </div>
+
+          <p class="certifications-summary" id="certifications-summary" aria-live="polite">
+            Mostrando 13 certificaciones
+          </p>
+          <p class="note">
+            Los enlaces de validación se muestran cuando están disponibles.
+            <a href="https://www.linkedin.com/in/gabrielacorporan/"
+               target="_blank" rel="noopener noreferrer">Ver LinkedIn ↗</a>
+          </p>
+        </section>
+      </div>
+    </section>
+
+   
+
+<!-- ==========================================
+     SERVICIOS CREATIVOS / ELAVISUAL
+========================================== -->
+
+<section class="section creative-services" id="servicios">
+
+  <div class="container">
+
+    <div class="services-header reveal">
+
+      <div>
+        <span class="section-eyebrow">
+          04 / SERVICIOS CREATIVOS
+        </span>
+
+        <h2>
+          Ideas que se convierten en
+          <em>experiencias.</em>
+        </h2>
+      </div>
+
+      <p class="services-intro">
+        Cada proyecto es una oportunidad para
+        comunicar algo diferente. Explora las
+        áreas en las que puedo aportar creatividad,
+        diseño y soluciones visuales.
+      </p>
+
+    </div>
+
+    <!-- TARJETAS DE SERVICIOS -->
+
+    <div class="services-grid">
+
+      <!-- DISEÑO GRÁFICO -->
+
+      <article class="service-card reveal"
+               style="--service-color:#a88bff">
+
+        <div class="service-card-top">
+          <span class="service-number">01 / SERVICIO</span>
+          <span class="service-icon" aria-hidden="true">✎</span>
+        </div>
+
+        <h3>Diseño gráfico</h3>
+
+        <p>
+          Creación de piezas visuales que combinan
+          composición, tipografía y color para
+          comunicar con personalidad.
+        </p>
+
+        <div class="service-tags">
+          <span>Afiches</span>
+          <span>Publicidad</span>
+          <span>Identidad visual</span>
+          <span>Composición</span>
+        </div>
+
+        <a href="#area/grafico" class="service-link">
+          Explorar proyectos <span aria-hidden="true">↗</span>
+        </a>
+
+      </article>
+
+      <!-- DISEÑO EDITORIAL -->
+
+      <article class="service-card reveal"
+               style="--service-color:#7ae5f4">
+
+        <div class="service-card-top">
+          <span class="service-number">02 / SERVICIO</span>
+          <span class="service-icon" aria-hidden="true">▤</span>
+        </div>
+
+        <h3>Diseño editorial</h3>
+
+        <p>
+          Organización visual de información mediante
+          retículas, imágenes y jerarquías tipográficas
+          para crear publicaciones atractivas.
+        </p>
+
+        <div class="service-tags">
+          <span>Folletos</span>
+          <span>Catálogos</span>
+          <span>Diagramación</span>
+          <span>Publicaciones</span>
+        </div>
+
+        <a href="#area/editorial" class="service-link">
+          Explorar proyectos <span aria-hidden="true">↗</span>
+        </a>
+
+      </article>
+
+      <!-- EDICIÓN DE VIDEO -->
+
+      <article class="service-card reveal"
+               style="--service-color:#d9fa74">
+
+        <div class="service-card-top">
+          <span class="service-number">03 / SERVICIO</span>
+          <span class="service-icon" aria-hidden="true">▶</span>
+        </div>
+
+        <h3>Edición audiovisual</h3>
+
+        <p>
+          Construcción de narrativas visuales mediante
+          montaje, ritmo, sonido y movimiento para
+          contenido digital.
+        </p>
+
+        <div class="service-tags">
+          <span>Edición de video</span>
+          <span>Reels</span>
+          <span>Motion graphics</span>
+          <span>Contenido digital</span>
+        </div>
+
+        <a href="#area/video" class="service-link">
+          Explorar proyectos <span aria-hidden="true">↗</span>
+        </a>
+
+      </article>
+
+      <!-- DISEÑO UI/UX -->
+
+      <article class="service-card reveal"
+               style="--service-color:#ff9bce">
+
+        <div class="service-card-top">
+          <span class="service-number">04 / SERVICIO</span>
+          <span class="service-icon" aria-hidden="true">⌘</span>
+        </div>
+
+        <h3>Diseño UI / UX</h3>
+
+        <p>
+          Diseño de interfaces digitales y prototipos
+          interactivos que conectan funcionalidad,
+          claridad y una identidad visual consistente.
+        </p>
+
+        <div class="service-tags">
+          <span>Interfaces</span>
+          <span>Prototipos</span>
+          <span>Figma</span>
+          <span>Experiencia de usuario</span>
+        </div>
+
+        <a href="#area/ui" class="service-link">
+          Explorar proyectos <span aria-hidden="true">↗</span>
+        </a>
+
+      </article>
+
+    </div>
+
+    <!-- PROCESO DE TRABAJO -->
+
+    <div class="services-process">
+
+      <div class="services-process-title">
+        <span class="section-eyebrow">MI PROCESO</span>
+        <h3>De una idea a una <em>solución visual.</em></h3>
+      </div>
+
+      <div class="services-steps">
+
+        <div class="services-step">
+          <span>01</span>
+          <strong>Conectar</strong>
+          <p>Entender la idea, el objetivo y las necesidades del proyecto.</p>
+        </div>
+
+        <div class="services-step">
+          <span>02</span>
+          <strong>Explorar</strong>
+          <p>Investigar referencias, conceptos y posibles direcciones visuales.</p>
+        </div>
+
+        <div class="services-step">
+          <span>03</span>
+          <strong>Diseñar</strong>
+          <p>Desarrollar la propuesta mediante pruebas y ajustes.</p>
+        </div>
+
+        <div class="services-step">
+          <span>04</span>
+          <strong>Presentar</strong>
+          <p>Organizar el resultado final y preparar los archivos correspondientes.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CONTACTO PROFESIONAL -->
+
+    <div class="services-cta">
+
+      <div class="services-cta-glow" aria-hidden="true"></div>
+
+      <div class="services-cta-content">
+
+        <span class="section-eyebrow">
+          ¿TIENES ALGO EN MENTE?
+        </span>
+
+        <h3>
+          Tu próxima idea merece
+          <em>tomar forma.</em>
+        </h3>
+
+        <p>
+          ¿Necesitas apoyo creativo para un proyecto?
+          Cuéntame tu idea y conversemos sobre cómo desarrollarla.
+        </p>
+
+        <div class="services-cta-actions">
+
+          <a href="mailto:soy.elavisual@gmail.com?subject=Consulta%20de%20proyecto%20-%20ElaVisual"
+             class="primary-btn">
+            Hablemos de tu proyecto ↗
+          </a>
+
+          <a href="#proyectos" class="secondary-btn">
+            Ver mi portafolio ✳
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="services-cta-art" aria-hidden="true">
+        <span class="services-art-circle"></span>
+        <span class="services-art-star">✳</span>
+        <span class="services-art-label">LET'S CREATE ↗</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <div class="contact-header">
+          <span class="section-eyebrow">05 / CONTACTO</span>
+          <h2>¿Creamos<br><em>algo genial?</em> ✳</h2>
+          <p>¿Tienes un proyecto o quieres conectar? Puedes encontrarme aquí.</p>
+        </div>
+        <div class="contact-grid">
+          <a href="https://www.linkedin.com/in/gabrielacorporan/"
+             target="_blank" rel="noopener noreferrer"
+             class="contact-card linkedin">
+            <span class="contact-icon">in</span>
+            <strong>LinkedIn</strong>
+            <small>Perfil profesional y formación</small>
+            <span class="contact-arrow">↗</span>
+          </a>
+          <a href="mailto:soy.elavisual@gmail.com"
+             class="contact-card email">
+            <span class="contact-icon">@</span>
+            <strong>Correo electrónico</strong>
+            <small>Proyectos, consultas y colaboraciones</small>
+            <span class="contact-arrow">↗</span>
+          </a>
+          <a href="https://www.instagram.com/Soy.Elavisual/"
+             target="_blank" rel="noopener noreferrer"
+             class="contact-card instagram">
+            <span class="contact-icon">◎</span>
+            <strong>Instagram</strong>
+            <small>Diseños y contenido creativo</small>
+            <span class="contact-arrow">↗</span>
+          </a>
+          <a href="https://www.behance.net/gabrielcorpora1"
+             target="_blank" rel="noopener noreferrer"
+             class="contact-card behance">
+            <span class="contact-icon">Bē</span>
+            <strong>Behance</strong>
+            <small>Portafolio de diseño multimedia</small>
+            <span class="contact-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PÁGINA DE ÁREAS CREATIVAS -->
+  <main id="category-view" hidden>
+    <section class="section inner-page">
+      <div class="container">
+        <a class="back-link" href="#servicios">
+  ← Volver a servicios creativos
+</a>
+        <span class="section-eyebrow" id="category-eyebrow">03 / ÁREA CREATIVA</span>
+        <h1 id="category-title">Diseño gráfico</h1>
+        <p class="section-lead" id="category-description"></p>
+        <div class="category-mini-nav">
+          <a href="#area/grafico">Diseño gráfico</a>
+          <a href="#area/video">Edición de video</a>
+          <a href="#area/editorial">Diseño editorial</a>
+          <a href="#area/ui">UI / UX</a>
+        </div>
+        <div class="project-grid" id="category-projects"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FICHA INDIVIDUAL DE PROYECTO -->
+  <main id="project-view" hidden>
+    <section class="section inner-page">
+      <div class="container">
+        <a class="back-link" id="case-back" href="#proyectos">
+          ← Volver a los proyectos
+        </a>
+
+        <span class="section-eyebrow" id="case-eyebrow">PROYECTO / DETALLE</span>
+        <h1 id="case-title">Proyecto creativo</h1>
+        <p class="case-subtitle" id="case-summary"></p>
+
+        <div class="case-feature-grid">
+          <div class="case-feature-art" id="case-cover"></div>
+          <aside class="case-facts">
+            <span class="section-eyebrow">FICHA DEL PROYECTO</span>
+            <div><small>ÁREA</small><strong id="case-category"></strong></div>
+            <div><small>TIPO DE TRABAJO</small><strong id="case-type"></strong></div>
+            <div><small>AÑO</small><strong id="case-date">2026</strong></div>
+            <div><small>HERRAMIENTAS</small><div id="case-tools" class="tools-list"></div></div>
+          </aside>
+        </div>
+
+        <div class="case-story-grid">
+          <article class="info-card">
+            <span>01 / OBJETIVO</span><h3>El desafío</h3><p id="case-challenge"></p>
+          </article>
+          <article class="info-card">
+            <span>02 / CONCEPTO</span><h3>La propuesta</h3><p id="case-approach"></p>
+          </article>
+          <article class="info-card">
+            <span>03 / RESULTADO</span><h3>El resultado</h3><p id="case-result"></p>
+          </article>
+        </div>
+
+        <div class="section-top">
+          <div><span class="section-eyebrow">PASO A PASO</span><h2>Proceso creativo ✳</h2></div>
+        </div>
+        <div id="case-process" class="case-story-grid"></div>
+
+        <div class="section-top">
+          <div><span class="section-eyebrow">GALERÍA</span><h2>Del boceto al resultado.</h2></div>
+        </div>
+        <div id="case-gallery" class="case-gallery-grid"></div>
+
+        <div class="case-bottom-nav">
+          <a href="#proyectos" id="case-back-bottom" class="secondary-btn">← Volver</a>
+          <a href="#proyecto/ritmo-y-color" id="case-next"
+             class="primary-btn">Siguiente proyecto ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- ==========================================
+     ORDERLY / CASO DE ESTUDIO UX/UI
+========================================== -->
+
+<main id="orderly-view" hidden>
+
+  <!-- PORTADA -->
+
+  <section class="ord-hero">
+    <div class="container">
+
+      <a href="#portafolio/personal"
+         class="ord-back">
+        ← Volver a proyectos personales
+      </a>
+
+      <div class="ord-hero-grid">
+
+        <div class="ord-hero-copy">
+
+          <span class="ord-label">
+            01 / PROYECTO PERSONAL · UX/UI
+          </span>
+
+          <h1>ORDERLY<span>.</span></h1>
+
+          <h2>
+            Tu comida favorita,<br>
+            <em>a tu manera.</em>
+          </h2>
+
+          <p>
+            Una experiencia móvil para descubrir comida,
+            personalizar productos, realizar pedidos
+            simulados y seguir el delivery desde
+            una misma interfaz.
+          </p>
+
+          <div class="ord-chips">
+            <span>Diseño UX/UI</span>
+            <span>Figma</span>
+            <span>Aplicación móvil</span>
+            <span>2026</span>
+          </div>
+
+          <div class="ord-actions">
+
+            <a
+              href="https://www.figma.com/design/CH7C1cKRCQF6pFgAgLJT4p/?node-id=12-1417"
+              class="ord-btn-primary"
+              target="_blank"
+              rel="noopener noreferrer">
+              Explorar Figma ↗
+            </a>
+
+           <button type="button"
+        id="ord-scroll-screens"
+        class="ord-btn-secondary">
+  Ver pantallas ↓
+</button>
+          </div>
+
+          <small class="ord-disclaimer">
+            Proyecto conceptual. No procesa pagos
+            ni entregas reales.
+          </small>
+
+        </div>
+
+        <div class="ord-hero-art"
+             aria-label="Vista ilustrativa de ORDERLY">
+
+          <div class="ord-art-circle"></div>
+
+          <div class="ord-art-card">
+            <span class="ord-art-top">ORDERLY.</span>
+            <span class="ord-art-food">🍔</span>
+            <strong>GOOD FOOD.<br>GOOD MOOD.</strong>
+            <small>YOUR FOOD, YOUR WAY</small>
+          </div>
+
+          <div class="ord-art-pill ord-pill-one">
+            ★ 4.8 · Favoritos
+          </div>
+
+          <div class="ord-art-pill ord-pill-two">
+            🛵 Tu pedido va en camino
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CINTA -->
+
+  <div class="ord-strip" aria-hidden="true">
+    ✳ DESCUBRE &nbsp; ✦ PERSONALIZA &nbsp;
+    ✳ PIDE &nbsp; ✦ SIGUE &nbsp;
+    ✳ VALORA &nbsp; ✦ DISFRUTA
+  </div>
+
+  <!-- CONTEXTO -->
+
+  <section class="ord-section" id="ord-contexto">
+    <div class="container ord-two-columns">
+
+      <div>
+        <span class="ord-label">02 / CONTEXTO</span>
+        <h2>
+          Una experiencia<br>
+          <em>sin complicaciones.</em>
+        </h2>
+      </div>
+
+      <div>
+        <p>
+          ORDERLY nació como un proyecto personal
+          para explorar el diseño de una aplicación
+          de pedidos de comida a domicilio.
+        </p>
+
+        <p>
+          El reto fue conectar varias funciones:
+          búsqueda, catálogo, personalización,
+          carrito, pago de demostración,
+          seguimiento y atención al usuario.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="container ord-info-grid">
+
+      <div>
+        <small>PROYECTO</small>
+        <strong>ORDERLY</strong>
+      </div>
+
+      <div>
+        <small>DISCIPLINA</small>
+        <strong>Diseño UX/UI</strong>
+      </div>
+
+      <div>
+        <small>HERRAMIENTA</small>
+        <strong>Figma</strong>
+      </div>
+
+      <div>
+        <small>AÑO</small>
+        <strong>2026</strong>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+
+  <section class="ord-section ord-section-alt"
+           id="ord-proceso">
+
+    <div class="container">
+
+      <div class="ord-section-heading">
+        <span class="ord-label">
+          03 / PROCESO CREATIVO
+        </span>
+
+        <h2>
+          De la idea<br>
+          <em>al prototipo.</em>
+        </h2>
+
+        <p>
+          Organización de funciones, diseño
+          de pantallas y ajustes del prototipo.
+        </p>
+      </div>
+
+      <div class="ord-process-grid">
+
+        <article>
+          <span>01</span>
+          <h3>Definir el reto</h3>
+          <p>
+            Organizar el proceso de pedido
+            y entrega en una experiencia clara.
+          </p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Diseñar los flujos</h3>
+          <p>
+            Estructurar búsqueda, personalización,
+            carrito, checkout y seguimiento.
+          </p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Crear la interfaz</h3>
+          <p>
+            Diseñar componentes, tarjetas,
+            botones y pantallas en Figma.
+          </p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Revisar y mejorar</h3>
+          <p>
+            Ajustar navegación, scroll,
+            mensajes y estados interactivos.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PANTALLAS -->
+
+  <section class="ord-section" id="ord-pantallas">
+
+    <div class="container">
+
+      <div class="ord-section-heading">
+        <span class="ord-label">
+          04 / DISEÑO DE INTERFAZ
+        </span>
+
+        <h2>
+          Cada pantalla,<br>
+          <em>una experiencia.</em>
+        </h2>
+
+        <p>
+          Representaciones ilustrativas de
+          tres momentos del recorrido.
+          Las pantallas originales están en Figma.
+        </p>
+      </div>
+
+      <div class="ord-screens">
+
+        <article class="ord-screen-card">
+          <div class="ord-screen-preview ord-preview-home">
+            <div class="ord-preview-header">
+              <strong>ORDERLY.</strong>
+              <span>⌖ Casa</span>
+            </div>
+
+            <div class="ord-preview-search">
+              ⌕ Buscar comida...
+            </div>
+
+            <div class="ord-preview-food">🍔</div>
+
+            <div class="ord-preview-box">
+              <strong>¿Qué se te antoja?</strong>
+              <span>🍕 &nbsp; 🍔 &nbsp; 🍗 &nbsp; 🍦</span>
+            </div>
+          </div>
+
+          <div class="ord-screen-text">
+            <span>01 / DESCUBRIR</span>
+            <h3>Explorar comida</h3>
+            <p>
+              Búsqueda, categorías y catálogo
+              de productos.
+            </p>
+          </div>
+        </article>
+
+        <article class="ord-screen-card">
+          <div class="ord-screen-preview ord-preview-custom">
+            <div class="ord-preview-header">
+              <strong>‹ Personalizar</strong>
+              <span>♡</span>
+            </div>
+
+            <div class="ord-preview-food">🍕</div>
+
+            <div class="ord-preview-box">
+              <strong>Pizza Pepperoni</strong>
+              <span>Tamaño · Ingredientes · Extras</span>
+              <div class="ord-choice">
+                <span>Personal</span>
+                <b>Mediana</b>
+                <span>Grande</span>
+              </div>
+            </div>
+
+            <div class="ord-preview-action">
+              Añadir al carrito +
+            </div>
+          </div>
+
+          <div class="ord-screen-text">
+            <span>02 / PERSONALIZAR</span>
+            <h3>Un pedido a tu gusto</h3>
+            <p>
+              Tamaños, ingredientes, extras
+              y actualización del total.
+            </p>
+          </div>
+        </article>
+
+        <article class="ord-screen-card">
+          <div class="ord-screen-preview ord-preview-track">
+            <div class="ord-preview-header">
+              <strong>‹ Mi pedido</strong>
+              <span>🛵</span>
+            </div>
+
+            <div class="ord-track-status">
+              ¡Tu pedido va en camino!
+            </div>
+
+            <div class="ord-preview-map">
+              <span>🍔</span>
+              <span>🛵</span>
+              <span>⌂</span>
+            </div>
+
+            <div class="ord-preview-box">
+              <strong>Seguimiento</strong>
+              <span>✓ Confirmado</span>
+              <span>✓ Repartidor asignado</span>
+              <span>● En camino</span>
+            </div>
+          </div>
+
+          <div class="ord-screen-text">
+            <span>03 / SEGUIMIENTO</span>
+            <h3>Delivery en contexto</h3>
+            <p>
+              Estado del pedido, mapa
+              y comunicación con delivery.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES -->
+
+  <section class="ord-section ord-section-alt"
+           id="ord-funciones">
+
+    <div class="container">
+
+      <div class="ord-section-heading">
+        <span class="ord-label">
+          05 / FUNCIONALIDADES
+        </span>
+
+        <h2>
+          Más que<br>
+          <em>pedir comida.</em>
+        </h2>
+      </div>
+
+      <div class="ord-features-grid">
+
+        <article>
+          <span>⌕</span>
+          <h3>Búsqueda inteligente</h3>
+          <p>
+            Exploración de restaurantes,
+            comidas y categorías.
+          </p>
+        </article>
+
+        <article>
+          <span>☷</span>
+          <h3>Personalización</h3>
+          <p>
+            Ingredientes, tamaños y extras.
+          </p>
+        </article>
+
+        <article>
+          <span>▣</span>
+          <h3>Carrito y checkout</h3>
+          <p>
+            Revisión del pedido y pago simulado.
+          </p>
+        </article>
+
+        <article>
+          <span>⌖</span>
+          <h3>Seguimiento</h3>
+          <p>
+            Estados de entrega y mapa ilustrativo.
+          </p>
+        </article>
+
+        <article>
+          <span>♡</span>
+          <h3>Favoritos e historial</h3>
+          <p>
+            Guardar productos y consultar pedidos.
+          </p>
+        </article>
+
+        <article>
+          <span>☆</span>
+          <h3>Calificaciones</h3>
+          <p>
+            Valoración de comida, restaurante
+            y delivery.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IDENTIDAD VISUAL -->
+
+  <section class="ord-section" id="ord-identidad">
+
+    <div class="container ord-two-columns">
+
+      <div>
+        <span class="ord-label">
+          06 / SISTEMA VISUAL
+        </span>
+
+        <h2>
+          Una identidad<br>
+          <em>con sabor.</em>
+        </h2>
+
+        <p>
+          Una paleta cálida ayuda a destacar
+          acciones principales y productos
+          dentro de la interfaz.
+        </p>
+      </div>
+
+      <div class="ord-palette">
+        <div style="background:#FF633D">
+          #FF633D
+        </div>
+        <div style="background:#D23C1E">
+          #D23C1E
+        </div>
+        <div style="background:#FFF1E9;color:#292521">
+          #FFF1E9
+        </div>
+        <div style="background:#292521">
+          #292521
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ITERACIONES -->
+
+  <section class="ord-section ord-section-alt">
+
+    <div class="container">
+
+      <div class="ord-section-heading">
+        <span class="ord-label">
+          07 / MEJORAS DEL PROTOTIPO
+        </span>
+
+        <h2>
+          Diseñar también<br>
+          es <em>mejorar.</em>
+        </h2>
+      </div>
+
+      <div class="ord-iterations">
+
+        <article>
+          <span>01 / NAVEGACIÓN</span>
+          <h3>Opciones recortadas</h3>
+          <p>
+            Se ajustó el desplazamiento de opciones
+            para permitir recorrerlas con mayor claridad.
+          </p>
+        </article>
+
+        <article>
+          <span>02 / DELIVERY</span>
+          <h3>Disponibilidad del chat</h3>
+          <p>
+            El acceso al chat se vinculó al estado
+            de aceptación del repartidor.
+          </p>
+        </article>
+
+        <article>
+          <span>03 / CARRITO</span>
+          <h3>Validación de compra</h3>
+          <p>
+            Se incorporaron estados de carrito vacío
+            para evitar avanzar sin productos.
+          </p>
+        </article>
+
+        <article>
+          <span>04 / INTERACCIÓN</span>
+          <h3>Controles más claros</h3>
+          <p>
+            Se revisaron botones, contraste
+            y jerarquía visual.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRUEBAS -->
+
+  <section class="ord-section">
+
+    <div class="container ord-two-columns">
+
+      <div>
+        <span class="ord-label">
+          08 / VALIDACIÓN
+        </span>
+
+        <h2>
+          Próximo paso:<br>
+          <em>pruebas de usabilidad.</em>
+        </h2>
+      </div>
+
+      <div>
+        <p>
+          Está previsto evaluar los recorridos de
+          búsqueda, personalización, compra,
+          seguimiento e historial.
+        </p>
+
+        <p>
+          Todavía no se presentan resultados
+          de pruebas realizadas con usuarios.
+        </p>
+
+        <a
+          href="https://www.figma.com/design/CH7C1cKRCQF6pFgAgLJT4p/?node-id=538-83"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ord-text-link">
+          Consultar plan en Figma ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CIERRE -->
+
+  <section class="ord-final">
+
+    <div class="container">
+
+      <span class="ord-label">
+        09 / EXPLORA ORDERLY
+      </span>
+
+      <h2>
+        ¿Listo para descubrir<br>
+        <em>algo delicioso?</em>
+      </h2>
+
+      <p>
+        Explora el diseño y la navegación
+        del prototipo original en Figma.
+      </p>
+
+      <a
+        href="https://www.figma.com/design/CH7C1cKRCQF6pFgAgLJT4p/?node-id=12-1417"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="ord-btn-primary">
+        Abrir ORDERLY en Figma ↗
+      </a>
+
+      <a href="#portafolio/personal"
+         class="ord-final-back">
+        ← Volver al portafolio
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+<!-- =====================================
+     DELIO SMARTPHONE / BRANDING
+===================================== -->
+
+<main id="delio-view" hidden>
+
+  <!-- PORTADA -->
+  <section class="delio-hero">
+    <div class="container">
+
+      <a href="#portafolio/trabajo" class="delio-back">
+        ← Volver a trabajos
+      </a>
+
+      <div class="delio-hero-grid">
+        <div class="delio-hero-copy">
+
+          <span class="delio-eyebrow">
+            01 / BRAND IDENTITY SYSTEM · 2026
+          </span>
+
+        <h1 class="delio-main-title">
+  DELIO
+  <span>SMARTPHONE</span>
+</h1>
+
+<h2 class="delio-main-subtitle">
+  Brand Identity <em>System.</em>
+</h2>
+
+          <p>
+            Presentación del sistema de identidad visual
+            desarrollado para Delio Smartphone, con
+            normas de aplicación, tipografía, colores
+            y recursos gráficos de marca.
+          </p>
+
+          <div class="delio-tags">
+            <span>Branding</span>
+            <span>Identidad visual</span>
+            <span>Montserrat</span>
+            <span>Illustrator</span>
+          </div>
+
+          <button type="button"
+                  class="delio-feature-button"
+                  id="delio-scroll-gallery">
+            Ver identidad visual ↓
+          </button>
+        </div>
+
+       <!-- LOGOTIPO ORIGINAL DELIO SMARTPHONE -->
+
+<div class="delio-hero-art">
+
+  <div class="delio-logo-card">
+
+    <span class="delio-card-label">
+      BRAND IDENTITY SYSTEM · 2026
+    </span>
+
+    <img
+      src="DELIO_LOGOTIPO-01.png"
+      alt="Logotipo original de Delio Smartphone"
+      class="delio-original-logo"
+    >
+
+    <div class="delio-card-line"></div>
+
+    <span class="delio-card-footer">
+      DELIO SMARTPHONE / BRAND IDENTITY
+    </span>
+
+  </div>
+
+</div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="delio-strip" aria-hidden="true">
+    ✦ BRANDING &nbsp; ✳ LOGOTIPO &nbsp;
+    ✦ TIPOGRAFÍA &nbsp; ✳ IDENTIDAD VISUAL
+  </div>
+
+  <!-- CONTEXTO -->
+  <section class="delio-section">
+    <div class="container delio-two-columns">
+      <div>
+        <span class="delio-eyebrow">02 / EL PROYECTO</span>
+        <h2>
+          Construir una identidad
+          <em>consistente.</em>
+        </h2>
+      </div>
+
+      <div>
+        <p>
+          Delio Smartphone es un negocio del sector
+          tecnológico ubicado en Santo Domingo,
+          República Dominicana.
+        </p>
+
+        <p>
+          El proyecto se centra en organizar su
+          comunicación visual mediante un sistema
+          que define la presentación del logotipo,
+          sus colores, tipografía y aplicaciones.
+        </p>
+      </div>
+    </div>
+
+    <div class="container delio-facts">
+      <div>
+        <small>CLIENTE</small>
+        <strong>Delio Smartphone</strong>
+      </div>
+      <div>
+        <small>DISCIPLINA</small>
+        <strong>Branding</strong>
+      </div>
+      <div>
+        <small>HERRAMIENTAS</small>
+        <strong>Illustrator / Photoshop</strong>
+      </div>
+      <div>
+        <small>AÑO</small>
+        <strong>2026</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="delio-section delio-section-alt">
+    <div class="container">
+
+      <span class="delio-eyebrow">
+        03 / PROCESO DE DISEÑO
+      </span>
+
+      <h2>
+        Del concepto<br>
+        <em>al sistema visual.</em>
+      </h2>
+
+      <div class="delio-process">
+        <article>
+          <span>01</span>
+          <h3>Análisis</h3>
+          <p>
+            Identificación de los elementos
+            necesarios para la presentación de marca.
+          </p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Construcción</h3>
+          <p>
+            Preparación del logotipo y
+            definición de recursos gráficos.
+          </p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Normalización</h3>
+          <p>
+            Definición de colores, tipografía,
+            área de seguridad y usos permitidos.
+          </p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Aplicación</h3>
+          <p>
+            Presentación de la identidad
+            en tarjetas y mockups.
+          </p>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOGOTIPO -->
+  <section class="delio-section" id="delio-identidad">
+    <div class="container">
+
+      <span class="delio-eyebrow">
+       
+<!-- 04 / IDENTIDAD PRINCIPAL -->
+
+      04 / IDENTIDAD PRINCIPAL
+    </span>
+
+    <h2>El <em>logotipo.</em></h2>
+
+    <p class="delio-lead">
+      El logotipo de Delio Smartphone combina un
+      símbolo inspirado en un dispositivo móvil con
+      un elemento orbital que transmite movimiento
+      y conexión tecnológica.
+
+      Su composición integra el símbolo rojo con el
+      nombre de la empresa en blanco, creando una
+      identidad visual de alto contraste.
+    </p>
+
+    <div class="delio-identity-grid">
+
+      <!-- LOGOTIPO COMPLETO -->
+      <article class="delio-identity-card">
+
+        <div class="delio-identity-preview">
+          <img
+            src="DELIO_LOGOTIPO-01.png"
+            alt="Logotipo completo de Delio Smartphone"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="delio-identity-description">
+          <span>01 / VERSIÓN PRINCIPAL</span>
+          <h3>Logotipo completo</h3>
+          <p>
+            Composición formada por el símbolo
+            gráfico y el nombre Delio Smartphone.
+          </p>
+        </div>
+
+      </article>
+
+      <!-- SÍMBOLO AISLADO -->
+      <article class="delio-identity-card">
+
+        <div class="delio-identity-preview">
+          <img
+            src="DELIO_LOGOTIPO-03.png"
+            alt="Símbolo gráfico de Delio Smartphone"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="delio-identity-description">
+          <span>02 / ELEMENTO GRÁFICO</span>
+          <h3>Símbolo de marca</h3>
+          <p>
+            Representación gráfica del dispositivo
+            móvil y su elemento orbital.
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+ 
+<!-- COLORES Y TIPOGRAFÍA -->
+
+<section class="delio-section delio-section-alt">
+  <div class="container">
+
+    <span class="delio-eyebrow">
+      05 / SISTEMA VISUAL
+    </span>
+
+    <h2>
+      Los detalles crean
+      <em>identidad.</em>
+    </h2>
+
+    <div class="delio-system-grid">
+
+      <!-- PALETA CROMÁTICA -->
+      <article class="delio-system-card">
+
+        <h3>Paleta cromática</h3>
+
+        <p>
+          Un sistema de alto contraste para
+          aplicaciones visuales claras.
+        </p>
+
+        <div class="delio-colors">
+
+          <div class="delio-color-red">
+            <strong>Rojo</strong>
+            <span>#A92522</span>
+          </div>
+
+          <div class="delio-color-dark">
+            <strong>Negro grafito</strong>
+            <span>#19191B</span>
+          </div>
+
+          <div class="delio-color-white">
+            <strong>Blanco</strong>
+            <span>#FFFFFF</span>
+          </div>
+
+          <div class="delio-color-gray">
+            <strong>Gris</strong>
+            <span>#A6A6AA</span>
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- TIPOGRAFÍA -->
+      <article class="delio-system-card">
+
+        <h3>Tipografía</h3>
+
+        <p>
+          Familia Montserrat, con distintos
+          pesos según la jerarquía del contenido.
+        </p>
+
+        <div class="delio-type-sample">
+          <strong>Montserrat</strong>
+          <span>
+            Bold · SemiBold · Medium · Regular
+          </span>
+          <b>Aa Bb Cc 123</b>
+        </div>
+
+      </article>
+
+    </div> <!-- Cierra .delio-system-grid -->
+
+  </div> <!-- Cierra .container -->
+</section>
+
+
+  <!-- ÁREA DE SEGURIDAD -->
+  <section class="delio-section">
+    <div class="container delio-two-columns">
+      <div>
+        <span class="delio-eyebrow">
+          06 / NORMAS DE IDENTIDAD
+        </span>
+
+        <h2>
+          Espacio para
+          <em>destacar.</em>
+        </h2>
+      </div>
+
+      <div>
+        <h3>Área de seguridad</h3>
+        <p>
+          El espacio de protección del logotipo
+          se define mediante la unidad X,
+          correspondiente a la altura de la
+          letra «D» del logotipo.
+        </p>
+
+        <h3>Usos de marca</h3>
+        <p>
+          El manual documenta las versiones
+          permitidas y las aplicaciones incorrectas
+          del logotipo, para conservar su
+          legibilidad y consistencia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="delio-section delio-section-alt"
+           id="delio-galeria">
+    <div class="container">
+
+      <span class="delio-eyebrow">
+        07 / APLICACIONES
+      </span>
+
+      <h2>
+        La identidad<br>
+        <em>en contexto.</em>
+      </h2>
+
+      <p class="delio-lead">
+        Manual de marca, versiones del logotipo,
+        tarjetas de presentación y aplicaciones
+        visuales del proyecto.
+      </p>
+
+     
+<!-- GALERÍA INTERACTIVA DE DELIO -->
+
+<div class="delio-applications">
+
+  <!-- 01 / MANUAL DE IDENTIDAD -->
+<details class="delio-app" id="delio-manual">
+    <summary class="delio-app-trigger">
+      <div class="delio-app-heading">
+        <span>01 / BRAND GUIDELINES</span>
+        <h3>Manual de identidad</h3>
+        <p>Normas, colores y recursos de marca.</p>
+      </div>
+
+      <div class="delio-app-thumbnail">
+        <div class="delio-mini-book">
+          <span>BRAND IDENTITY · 2026</span>
+          <img
+            src="Delio_LOGOTIPO-01.png"
+            alt=""
+          >
+          <small>DELIO SMARTPHONE</small>
+        </div>
+      </div>
+
+      <span class="delio-app-action">
+        Explorar <span aria-hidden="true">+</span>
+      </span>
+    </summary>
+
+    <div class="delio-app-content">
+      <div class="delio-app-intro">
+        <h4>Sistema de identidad visual</h4>
+        <p>
+          Una presentación de los elementos
+          que conforman la identidad de
+          Delio Smartphone.
+        </p>
+      </div>
+
+     
+<!-- VISOR INTERACTIVO DEL MANUAL -->
+
+<div class="delio-manual-heading">
+  <div>
+    <span class="delio-manual-kicker">
+      MANUAL DE IDENTIDAD VISUAL
+    </span>
+
+    <h4>Brand Identity System</h4>
+
+    <p>
+      Explora las diez páginas del manual
+      de Delio Smartphone.
+    </p>
+  </div>
+
+  <span class="delio-manual-counter"
+        id="delio-manual-counter">
+    01 / 10
+  </span>
+</div>
+
+<div class="delio-book">
+
+  <div class="delio-book-page"
+       id="delio-book-page"
+       aria-live="polite"
+       aria-atomic="true">
+  </div>
+
+</div>
+
+<!-- BOTONES DE NAVEGACIÓN -->
+
+<div class="delio-book-controls">
+
+  <button type="button"
+          id="delio-book-prev"
+          class="delio-book-btn">
+    ← Anterior
+  </button>
+
+  <div class="delio-book-progress"
+       id="delio-book-progress">
+  </div>
+
+  <button type="button"
+          id="delio-book-next"
+          class="delio-book-btn">
+    Siguiente →
+  </button>
+
+</div>
+
+<div class="delio-book-footer">
+  <span id="delio-book-chapter">
+    Portada
+  </span>
+
+  <span>DELIO SMARTPHONE · 2026</span>
+</div>
+
+</div> <!-- Cierra .delio-app-content -->
+
+</details> <!-- Cierra el manual -->
+
+
+
+  <!-- 02 / TARJETAS DE PRESENTACIÓN -->
+  
+<!-- =====================================
+     02 / TARJETAS INTERACTIVAS
+===================================== -->
+
+<details class="delio-app" id="delio-tarjetas">
+
+  <summary class="delio-app-trigger">
+
+    <div class="delio-app-heading">
+      <span>02 / BRAND STATIONERY</span>
+      <h3>Tarjetas de presentación</h3>
+      <p>
+        Explora el frente, reverso y mockup
+        de la identidad corporativa.
+      </p>
+    </div>
+
+    <div class="delio-app-thumbnail">
+      <div class="delio-mini-business">
+        <img
+          src="Delio tarjeta de presentacion-01.png"
+          alt=""
+        >
+      </div>
+    </div>
+
+    <span class="delio-app-action">
+      Explorar <span aria-hidden="true">+</span>
+    </span>
+
+  </summary>
+
+  <div class="delio-app-content">
+
+    <div class="delio-cards-heading">
+      <span class="delio-manual-kicker">
+        APLICACIÓN DE IDENTIDAD CORPORATIVA
+      </span>
+
+      <h4>Diseño de tarjetas</h4>
+
+      <p>
+        Aplicación del logotipo, la paleta cromática
+        y la información comercial de Delio Smartphone.
+      </p>
+    </div>
+
+    <!-- SELECTOR DE VISTAS -->
+
+    <div class="delio-cards-tabs"
+         role="group"
+         aria-label="Seleccionar vista de las tarjetas">
+
+      <button type="button"
+              class="delio-cards-tab active"
+              data-delio-card="frente"
+              aria-pressed="true">
+        01 / Frente
+      </button>
+
+      <button type="button"
+              class="delio-cards-tab"
+              data-delio-card="reverso"
+              aria-pressed="false">
+        02 / Reverso
+      </button>
+
+      <button type="button"
+              class="delio-cards-tab"
+              data-delio-card="mockup"
+              aria-pressed="false">
+        03 / Mockup
+      </button>
+
+    </div>
+
+    
+<!-- VISUALIZADOR CON GIRO 3D -->
+
+<div class="delio-cards-stage">
+
+  <div class="delio-card-floating" id="delio-card-floating">
+
+    <div class="delio-card-rotator" id="delio-card-rotator">
+
+      <!-- FRENTE -->
+      <div class="delio-card-face delio-card-front">
+        <img
+          id="delio-card-front-img"
+          src="Delio tarjeta de presentacion-01.png"
+          alt="Frente de la tarjeta de Delio Smartphone"
+        >
+      </div>
+
+      <!-- REVERSO -->
+      <div class="delio-card-face delio-card-back">
+        <img
+          id="delio-card-back-img"
+          src="Delio tarjeta de presentacion-02.png"
+          alt="Reverso de la tarjeta de Delio Smartphone"
+        >
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- MOCKUP -->
+  <div class="delio-card-mockup" id="delio-card-mockup" hidden>
+    <img
+      id="delio-card-mockup-img"
+      src="mockup delio.png"
+      alt="Mockup de las tarjetas de Delio Smartphone"
+    >
+  </div>
+
+  <!-- AMPLIAR -->
+  <button
+    type="button"
+    class="delio-card-expand"
+    id="delio-cards-zoom"
+  >
+    ⤢ Ampliar imagen
+  </button>
+
+</div>
+
+
+    <!-- INFORMACIÓN DE LA VISTA -->
+
+    <div class="delio-cards-bottom">
+
+      <div>
+        <span id="delio-cards-number">
+          01 / 03
+        </span>
+
+        <h5 id="delio-cards-title">
+          Diseño frontal
+        </h5>
+
+        <p id="delio-cards-description">
+          Logotipo principal sobre fondo negro
+          grafito, acompañado de la frase
+          «Tecnología que te conecta».
+        </p>
+      </div>
+
+      <span class="delio-cards-hint">
+        SELECCIONA UNA VISTA PARA EXPLORAR
+      </span>
+
+    </div>
+
+  </div>
+
+</details>
+
+
+
+  <!-- 03 / ESTABLECIMIENTO -->
+  <details class="delio-app">
+
+    <summary class="delio-app-trigger">
+      <div class="delio-app-heading">
+        <span>03 / ENVIRONMENTAL BRANDING</span>
+        <h3>Establecimiento</h3>
+        <p>Propuesta de señalización exterior.</p>
+      </div>
+
+      <div class="delio-app-thumbnail">
+        <div class="delio-mini-store">
+          <span>DELIO SMARTPHONE</span>
+          <div></div>
+        </div>
+      </div>
+
+      <span class="delio-app-action">
+        Explorar <span aria-hidden="true">+</span>
+      </span>
+    </summary>
+
+    <div class="delio-app-content">
+      <div class="delio-app-intro">
+        <h4>Identidad en el espacio físico</h4>
+        <p>
+          Concepto de fachada para visualizar
+          cómo podría presentarse la marca
+          en un establecimiento.
+        </p>
+      </div>
+
+      <div class="delio-store-scene">
+
+        <div class="delio-store-sign">
+          <img
+            src="img/proyectos/delio-logo-original.png"
+            alt="Logotipo de Delio en señalética"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="delio-store-windows">
+          <div class="delio-store-window"></div>
+          <div class="delio-store-door"></div>
+          <div class="delio-store-window"></div>
+        </div>
+
+      </div>
+
+      <p class="delio-app-note">
+        Mockup conceptual. No representa una
+        instalación realizada.
+      </p>
+    </div>
+
+  </details>
+
+
+  <!-- 04 / APLICACIÓN DIGITAL -->
+  <details class="delio-app">
+
+    <summary class="delio-app-trigger">
+      <div class="delio-app-heading">
+        <span>04 / DIGITAL BRANDING</span>
+        <h3>Aplicación digital</h3>
+        <p>Diseño de contenido para redes.</p>
+      </div>
+
+      <div class="delio-app-thumbnail">
+        <div class="delio-mini-social">
+          <span>DELIO.</span>
+          <small>SMARTPHONE</small>
+        </div>
+      </div>
+
+      <span class="delio-app-action">
+        Explorar <span aria-hidden="true">+</span>
+      </span>
+    </summary>
+
+    <div class="delio-app-content">
+      <div class="delio-app-intro">
+        <h4>Comunicación de marca</h4>
+        <p>
+          Ejemplo de una composición digital
+          utilizando la identidad visual de Delio.
+        </p>
+      </div>
+
+      <div class="delio-social-stage">
+        <div class="delio-social-post">
+
+          <div class="delio-social-top">
+            <span>DELIO SMARTPHONE</span>
+            <span>2026</span>
+          </div>
+
+          <img
+            src="img/proyectos/delio-logo-original.png"
+            alt="Identidad de Delio Smartphone"
+            loading="lazy"
+          >
+
+          <div class="delio-social-bottom">
+            <strong>TECNOLOGÍA CON IDENTIDAD.</strong>
+            <span>BRAND CONCEPT / DELIO</span>
+          </div>
+
+        </div>
+      </div>
+
+      <p class="delio-app-note">
+        Pieza conceptual de presentación.
+        No corresponde a una campaña publicada.
+      </p>
+    </div>
+
+  </details>
+
+</div>
+
+    </div>
+  </section>
+
+  <!-- CIERRE -->
+  <section class="delio-final">
+    <div class="container">
+
+      <span class="delio-eyebrow">
+        08 / BRAND IDENTITY SYSTEM
+      </span>
+
+      <h2>
+        Una identidad.<br>
+        <em>Muchas aplicaciones.</em>
+      </h2>
+
+      <p>
+        Explora otros trabajos y proyectos
+        de identidad visual en ElaVisual.
+      </p>
+
+      <a href="#portafolio/trabajo"
+         class="delio-feature-button">
+        Volver a mis trabajos ↗
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+  <!-- VENTANA EMERGENTE DE PROGRAMAS -->
+  <div id="software-popup" class="software-popup" hidden>
+    <div class="software-popup__panel" role="dialog"
+         aria-modal="true" aria-labelledby="popup-title" tabindex="-1">
+      <div class="software-popup__head">
+        <div>
+          <span class="section-eyebrow" id="popup-label"></span>
+          <h2 id="popup-title"></h2>
+          <p id="popup-description"></p>
+        </div>
+        <button id="popup-close" class="popup-close" type="button"
+                aria-label="Cerrar ventana">×</button>
+      </div>
+      <div class="software-popup__inner">
+        <span class="section-eyebrow">01 / EXPLORA POR PROGRAMA</span>
+        <p class="muted">Selecciona una herramienta para ver sus proyectos.</p>
+        <div class="software-popup__apps" id="popup-apps"></div>
+        <div class="popup-results-head">
+          <div>
+            <span class="section-eyebrow">02 / PROYECTOS</span>
+            <h3 id="popup-program"></h3>
+          </div>
+          <span id="popup-count"></span>
+        </div>
+        <div id="popup-projects" class="popup-projects"></div>
+      </div>
+      <div class="popup-footer">
+        <span>ELAVISUAL · PORTAFOLIO 2026</span>
+        <a href="#proyectos" class="secondary-btn">← Volver a Mis proyectos</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <a href="#inicio" class="logo">
+        <img src="Logo ElaVisual Vectorizado.png" alt="" width="42" height="42">
+        <span>ELA<em>VISUAL</em></span>
+      </a>
+      <span>© 2026 · Hecho con creatividad y cafeína ☕</span>
+      <div class="footer-links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#perfil">Perfil / CV</a>
+        <a href="#contacto">Contacto ↑</a>
+      </div>
+    </div>
+  </footer>
+
+<!-- GALERÍA INTERACTIVA / ELAVISUAL -->
+<div id="gallery-lightbox"
+     class="gallery-lightbox"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Visor de imágenes de proyectos"
+     aria-hidden="true"
+     hidden>
+
+  <div class="gallery-lightbox__top">
+    <div>
+      <span class="gallery-lightbox__eyebrow">
+        ELAVISUAL / GALERÍA
+      </span>
+      <h2 id="gallery-lightbox-title">
+        Imagen del proyecto
+      </h2>
+    </div>
+
+    <button id="gallery-lightbox-close"
+            class="gallery-lightbox__close"
+            type="button"
+            aria-label="Cerrar galería">
+      ✕
+    </button>
+  </div>
+
+  <div class="gallery-lightbox__stage">
+
+    <button id="gallery-lightbox-prev"
+            class="gallery-lightbox__arrow"
+            type="button"
+            aria-label="Imagen anterior">
+      ❮
+    </button>
+
+    <div class="gallery-lightbox__image-area">
+      <img id="gallery-lightbox-image"
+           src=""
+           alt="">
+    </div>
+
+    <button id="gallery-lightbox-next"
+            class="gallery-lightbox__arrow"
+            type="button"
+            aria-label="Imagen siguiente">
+      ❯
+    </button>
+
+  </div>
+
+  <div class="gallery-lightbox__bottom">
+    <p id="gallery-lightbox-caption"></p>
+    <span id="gallery-lightbox-count">01 / 01</span>
+  </div>
+
+</div>
+
+<!-- CURSOR PERSONALIZADO ELAVISUAL -->
+<div id="elavisual-cursor" aria-hidden="true">
+  <div class="cursor-ring"></div>
+  <div class="cursor-dot"></div>
+</div>
+
+</body>
+</html>
